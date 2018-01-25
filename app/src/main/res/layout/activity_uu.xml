@@ -37,7 +37,6 @@
         android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="33dp"
@@ -47,18 +46,26 @@
 
         <Button
             android:id="@+id/button"
-            android:onClick="summit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:onClick="summit"
+            android:tag="1"
             android:text="6"
             android:textSize="30sp" />
 
         <Button
             android:id="@+id/button2"
+            android:tag="2"
             android:onClick="summit"
             android:textSize="30sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -67,8 +74,12 @@
 
         <Button
             android:id="@+id/button3"
+            android:tag="3"
             android:onClick="summit"
             android:textSize="30sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -77,12 +88,27 @@
 
         <Button
             android:id="@+id/button4"
+            android:tag="4"
             android:onClick="summit"
             android:textSize="30sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_row="1"
             android:text="18" />
     </GridLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:text="Correct!" />
 </android.widget.RelativeLayout>

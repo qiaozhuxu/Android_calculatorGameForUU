@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         sendMessage();
         TextView textView = findViewById(R.id.textView);
 
-        Intent intent = new Intent(this, DisplayGameView.class);
+        Intent intent = new Intent(this, uuActivity.class);
         String message = textView.getText().toString();;
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
